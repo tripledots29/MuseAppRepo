@@ -1,4 +1,6 @@
-import React from 'react';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
@@ -7,6 +9,7 @@ export default function App() {
 console.log("App Executed");
 
   return (
+    <NavigationContainer>
         <View style={styles.main}>
           <View style={styles.header}>
               <View style={styles.headerSections}>
@@ -32,6 +35,7 @@ console.log("App Executed");
 
         </View>
     </View>
+    </NavigationContainer>
   );
 }
 
@@ -65,25 +69,3 @@ const styles = StyleSheet.create({
     height: 50,
   },
 });
-
-
-{/*<View 
-    style = {{
-      backgroundColor: "dodgerblue",
-      flex: 1,
-    }}
-    >
-      <View style = {{
-        backgroundColor: "white",
-        flex: 1,
-
-      }}/>
-
-
-      <View style = {{
-        backgroundColor: "dodgerblue",
-        flex: 6
-
-      }}/>
-
-    </View>*/}
