@@ -12,19 +12,19 @@ console.log("App Executed");
               <View style={styles.headerSections}>
                 <Image
                   style={styles.headerImage}
-                  source={require('./assets/icon.png')}
+                  source={require('./assets/headerIcons/hamburger.png')}
                 />
               </View>
               <View style={styles.headerSections}>
               <Image
                   style={styles.headerImage}
-                  source={require('./assets/icon.png')}
+                  source={require('./assets/headerIcons/logo.png')}
                 />
               </View>
               <View style={styles.headerSections}>
               <Image
                   style={styles.headerImage}
-                  source={require('./assets/icon.png')}
+                  source={require('./assets/headerIcons/messages.png')}
                 />
               </View>
         </View>
@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     header: {
       flex:1,
       flexDirection: 'row',
-      backgroundColor: '#00ff00',
     },
 
     body: {
@@ -55,7 +54,7 @@ const styles = StyleSheet.create({
 
     headerSections: {
       flex: 1,
-      backgroundColor: 'blue',
+      backgroundColor: 'white',
       justifyContent: 'center',
       alignItems: 'center',
       borderWidth: 1,
