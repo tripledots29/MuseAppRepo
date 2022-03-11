@@ -1,71 +1,83 @@
+import 'react-native-gesture-handler';
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { Dimensions } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
-export default function App() {
+//Screens
+import Home from './screens/Home';
+import Events from './screens/Events';
+import Blog from './screens/Blog';
+import Videos from './screens/Videos';
+import Reviews from './screens/Reviews';
+import Chat from './screens/Chat';
 
-console.log("App Executed");
-
+//Functions to load content when chosen in navigation
+function HomeScreen() {
   return (
-    <NavigationContainer>
-        <View style={styles.main}>
-          <View style={styles.header}>
-              <View style={styles.headerSections}>
-                <Image
-                  style={styles.headerImage}
-                  source={require('./assets/headerIcons/hamburger.png')}
-                />
-              </View>
-              <View style={styles.headerSections}>
-              <Image
-                  style={styles.headerImage}
-                  source={require('./assets/headerIcons/logo.png')}
-                />
-              </View>
-              <View style={styles.headerSections}>
-              <Image
-                  style={styles.headerImage}
-                  source={require('./assets/headerIcons/messages.png')}
-                />
-              </View>
-        </View>
-        <View style={styles.body}>
-
-        </View>
-    </View>
-    </NavigationContainer>
+    <Home />
   );
 }
 
-const styles = StyleSheet.create({
+function EventsScreen() {
+  return (
+    <Events />
+  );
+}
 
-  main: {
-    flex: 1,
-    backgroundColor: '#ff0000',
-    },
+function BlogScreen() {
+  return (
+    <Blog />
+  );
+}
 
-    header: {
-      flex:1,
-      flexDirection: 'row',
-    },
+function VideosScreen() {
+  return (
+    <Videos />
+  );
+}
 
-    body: {
-      flex: 6,
-      backgroundColor: 'gold',
-    },
+function ReviewsScreen() {
+  return (
+    <Reviews />
+  );
+}
 
-    headerSections: {
-      flex: 1,
-      backgroundColor: 'white',
-      justifyContent: 'center',
-      alignItems: 'center',
-      borderWidth: 1,
-    },
+function ChatScreen() {
+  return (
+    <Chat />
+  );
+}
 
-  headerImage: {
-    width: 50,
-    height: 50,
-  },
-});
+
+const Drawer = createDrawerNavigator();
+
+function DrawerNavigation() {
+  return (
+    <Drawer.Navigator screenOptions={{
+      headerShown: false,
+      drawerStyle: {
+        width: Dimensions.get('window').width,
+      }
+    }}>
+      <Drawer.Screen name="My Muse" component={HomeScreen} />
+      <Drawer.Screen name="The Blog" component={BlogScreen} />
+      <Drawer.Screen name="Videos" component={VideosScreen} />
+      <Drawer.Screen name="Events" component={EventsScreen} />
+      <Drawer.Screen name="Reviews" component={ReviewsScreen} />
+      <Drawer.Screen name="Chat" component={ChatScreen} />
+      
+      
+      {/*If needed, Setting height to 0 means the item doesn't show in the drawer, but is accessible by other pages: options={{drawerItemStyle: {height: 0} }*/}
+    </Drawer.Navigator>
+  );
+}
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <DrawerNavigation />
+    </NavigationContainer>
+  );
+}
