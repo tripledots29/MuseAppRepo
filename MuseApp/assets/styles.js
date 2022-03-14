@@ -2,6 +2,8 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
 
+  //generic area 
+
   main: {
     flex: 1,
     backgroundColor: '#ffffff',
@@ -20,11 +22,24 @@ const styles = StyleSheet.create({
       //backgroundColor: 'gold',
     },
 
-    title: {
+    genericTitle: {
       fontSize: 50,
       fontWeight: "300",
     },
 
+    blueCaps: {
+      
+    },
+
+    genericButton: {
+
+    },
+
+    genericSearchbar: {
+
+    },
+
+    //header stuff
     headerSections: {
       flex: 1,
       //backgroundColor: 'white',
