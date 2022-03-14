@@ -15,8 +15,8 @@ const styles = StyleSheet.create({
     body: {
       flex: 7,
       paddingTop: 50,
-      paddingLeft: 50,
-      paddingRight: 50,
+      paddingLeft: 10,
+      paddingRight:10,
       //backgroundColor: 'gold',
     },
 
