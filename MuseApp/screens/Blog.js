@@ -31,10 +31,13 @@ export default function Blog() {
         <View style={styles.body}>
             <Text style = {styles.genericTitle}>On the Blog</Text>
             <Text style = {styles.blueCaps}>Wellness</Text>
+            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu urna metus. Aenean laoreet sed odio vitae faucibus. Maecenas nec ante massa. </Text>
+            <Text style = {styles.blueCaps}>Beauty</Text>
+            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu urna metus. Aenean laoreet sed odio vitae faucibus. Maecenas nec ante massa. </Text>
             <Button title="Test button - Go to events" onPress={() => navigation.navigate("Events")} />
         </View>
 
-    </View>
+    </View >
     );
     
 }

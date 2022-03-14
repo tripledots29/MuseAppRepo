@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
 
     body: {
       flex: 7,
-      paddingTop: 50,
+      paddingTop: 30,
       paddingLeft: 10,
       paddingRight:10,
       //backgroundColor: 'gold',
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     genericTitle: {
       fontSize: 50,
       fontWeight: "300",
+      paddingBottom: 20
     },
 
     blueCaps: {
