@@ -18,7 +18,7 @@ export default function AppHeader() {
                 </TouchableOpacity>
               </View>
               
-              <View style={styles.headerSections}>
+              <View style={styles.headerMiddle}>
                 <TouchableOpacity onPress={() => navigation.navigate("My Muse")} >
                     <Image
                         style={styles.headerImage}

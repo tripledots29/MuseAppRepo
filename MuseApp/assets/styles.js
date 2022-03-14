@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
 
   main: {
     flex: 1,
-    backgroundColor: '#ff0000',
+    backgroundColor: '#ffffff',
     },
 
     header: {
@@ -13,13 +13,29 @@ const styles = StyleSheet.create({
     },
 
     body: {
-      flex: 6,
-      backgroundColor: 'gold',
+      flex: 7,
+      paddingTop: 50,
+      paddingLeft: 50,
+      paddingRight: 50,
+      //backgroundColor: 'gold',
+    },
+
+    title: {
+      fontSize: 50,
+      fontWeight: "300",
     },
 
     headerSections: {
       flex: 1,
-      backgroundColor: 'white',
+      //backgroundColor: 'white',
+      justifyContent: 'center',
+      alignItems: 'center',
+      //borderWidth: 1,
+    },
+
+    headerMiddle: {
+      flex: 4,
+      //backgroundColor: 'white',
       justifyContent: 'center',
       alignItems: 'center',
       //borderWidth: 1,
@@ -28,6 +44,14 @@ const styles = StyleSheet.create({
   headerImage: {
     width: 50,
     height: 50,
+  },
+
+  //test for blog thumbnail -ignore for now
+  BlogImage: {
+    flex: 1,
+    width:500,
+    height: 500,
+    justifyContent: "center"
   },
 })
 

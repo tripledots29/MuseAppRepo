@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, View, Image, Text, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, View, Image, Text, TouchableOpacity, Button, ImageBackground } from 'react-native';
 import AppHeader from './AppHeader';
 import {styles} from '../assets/styles.js';
 
@@ -9,13 +9,27 @@ export default function Blog() {
     
     return (
     <View style={styles.main}>
-        
+
+    
+    {/* TEST FOR BACKGROUND IMAGE ON BLOG THUMBNAIL
+        <View style={styles.header}>
+            <ImageBackground 
+            style={styles.BlogImage}
+            resizeMode="cover"
+            source={require('../assets/blogThumbnails/OILS.png')}
+            >
+                <AppHeader />
+            </ImageBackground>
+        </View>
+    */}
+
         <View style={styles.header}>
             <AppHeader />
         </View>
-        
+
+
         <View style={styles.body}>
-            <Text>This is the blog page</Text>
+            <Text style = {styles.title}>On the Blog</Text>
             <Button title="Test button - Go to events" onPress={() => navigation.navigate("Events")} />
         </View>
 
