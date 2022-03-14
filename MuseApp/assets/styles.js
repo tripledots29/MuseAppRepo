@@ -28,7 +28,9 @@ const styles = StyleSheet.create({
     },
 
     blueCaps: {
-      
+      fontWeight:"bold",
+      textTransform: 'uppercase',
+      color: "blue",
     },
 
     genericButton: {

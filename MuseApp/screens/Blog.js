@@ -29,7 +29,8 @@ export default function Blog() {
 
 
         <View style={styles.body}>
-            <Text style = {styles.title}>On the Blog</Text>
+            <Text style = {styles.genericTitle}>On the Blog</Text>
+            <Text style = {styles.blueCaps}>Wellness</Text>
             <Button title="Test button - Go to events" onPress={() => navigation.navigate("Events")} />
         </View>
 
