@@ -12,26 +12,29 @@ const styles = StyleSheet.create({
     header: {
       flex:1,
       flexDirection: 'row',
+      paddingLeft: 3,
+      paddingRight:3,
     },
 
     body: {
       flex: 7,
-      paddingTop: 30,
+      paddingTop: 0,
       paddingLeft: 10,
       paddingRight:10,
       //backgroundColor: 'gold',
     },
 
     genericTitle: {
-      fontSize: 50,
+      fontSize: 30,
       fontWeight: "300",
-      paddingBottom: 20
+      paddingBottom: 15
     },
 
     blueCaps: {
-      fontWeight:"bold",
+      fontSize: 18,
+      fontWeight:"400",
       textTransform: 'uppercase',
-      color: "blue",
+      color: "#0D3691",
     },
 
     genericButton: {

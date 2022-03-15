@@ -67,7 +67,9 @@ function DrawerNavigation() {
       drawerStyle: {
         width: Dimensions.get('window').width,
       }
-    }}>
+    }}
+    
+    >
       <Drawer.Screen name="My Muse" component={HomeScreen} />
       <Drawer.Screen name="The Blog" component={BlogScreen} />
       <Drawer.Screen name="Blog Page" component={BlogPageScreen} options={{drawerItemStyle: {height: 0}}} />
