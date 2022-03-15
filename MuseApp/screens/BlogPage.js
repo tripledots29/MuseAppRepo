@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, View, Image, Text, TouchableOpacity, Button, ImageBackground } from 'react-native';
 import AppHeader from './AppHeader';
 import {styles} from '../assets/styles.js';
-import {Peter} from '../assets/stylesPeter';
+import {Media} from '../assets/stylesMedia';
 
 
 export default function BlogPage() {
@@ -31,14 +31,15 @@ export default function BlogPage() {
 
 
         <View style={styles.body}>
+            
             <Text style = {styles.genericTitle}>Blog Example 1</Text>
 
             <Text style = {styles.blueCaps}>Beauty</Text>
             <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu urna metus. Aenean laoreet sed odio vitae faucibus. Maecenas nec ante massa. </Text>
             
-            <Text style = {Peter.blogTitle}>Journaling</Text>
+            <Text style = {Media.blogTitle}>Journaling</Text>
             
-            <Button title="Test button - Go to events" onPress={() => navigation.navigate("Events")} />
+            <Button title="Go back" onPress={() => navigation.navigate("The Blog")} />
         </View>
 
     </View >
