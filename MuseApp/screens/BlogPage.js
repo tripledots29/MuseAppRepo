@@ -6,7 +6,7 @@ import {styles} from '../assets/styles.js';
 import {Peter} from '../assets/stylesPeter';
 
 
-export default function Blog() {
+export default function BlogPage() {
     const navigation = useNavigation();
     
     return (
@@ -31,17 +31,14 @@ export default function Blog() {
 
 
         <View style={styles.body}>
-            <Text style = {styles.genericTitle}>On the Blog</Text>
+            <Text style = {styles.genericTitle}>Blog Example 1</Text>
 
-            <Text style = {styles.blueCaps}>Wellness</Text>
-            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu urna metus. Aenean laoreet sed odio vitae faucibus. Maecenas nec ante massa. </Text>
-            
             <Text style = {styles.blueCaps}>Beauty</Text>
             <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu urna metus. Aenean laoreet sed odio vitae faucibus. Maecenas nec ante massa. </Text>
             
             <Text style = {Peter.blogTitle}>Journaling</Text>
-
-            <Button title="Go to example blog" onPress={() => navigation.navigate("BlogPage")} />
+            
+            <Button title="Test button - Go to events" onPress={() => navigation.navigate("Events")} />
         </View>
 
     </View >
