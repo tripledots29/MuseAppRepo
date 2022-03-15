@@ -41,7 +41,7 @@ export default function Blog() {
             
             <Text style = {Peter.blogTitle}>Journaling</Text>
 
-            <Button title="Go to example blog" onPress={() => navigation.navigate("BlogPage")} />
+            <Button title="Go to example blog" onPress={() => navigation.navigate("Blog Page")} />
         </View>
 
     </View >

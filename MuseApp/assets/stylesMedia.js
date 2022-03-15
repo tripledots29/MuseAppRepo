@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-const Peter = StyleSheet.create({
+const Media = StyleSheet.create({
 
     blogTitle: {
         color: "red",
