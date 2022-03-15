@@ -9,6 +9,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Home from './screens/Home';
 import Events from './screens/Events';
 import Blog from './screens/Blog';
+import BlogPage from './screens/BlogPage';
 import Videos from './screens/Videos';
 import Reviews from './screens/Reviews';
 import Chat from './screens/Chat';
@@ -29,6 +30,12 @@ function EventsScreen() {
 function BlogScreen() {
   return (
     <Blog />
+  );
+}
+
+function BlogPageScreen() {
+  return (
+    <BlogPage />
   );
 }
 
@@ -63,6 +70,7 @@ function DrawerNavigation() {
     }}>
       <Drawer.Screen name="My Muse" component={HomeScreen} />
       <Drawer.Screen name="The Blog" component={BlogScreen} />
+      <Drawer.Screen name="Blog Page" component={BlogPageScreen} options={{drawerItemStyle: {height: 0}}} />
       <Drawer.Screen name="Videos" component={VideosScreen} />
       <Drawer.Screen name="Events" component={EventsScreen} />
       <Drawer.Screen name="Reviews" component={ReviewsScreen} />

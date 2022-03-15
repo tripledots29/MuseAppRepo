@@ -14,7 +14,7 @@ export default function Home() {
           </View>
           
           <View style={styles.body}>
-            <Text>This is the home page</Text>
+            <Text>Thghjhgjgh</Text>
           </View>
 
       </View>
