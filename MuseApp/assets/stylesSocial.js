@@ -19,8 +19,7 @@ const Social = StyleSheet.create({
         height: 160
     },
     scrollViewMain: {
-        height: "100%",
-        //marginBottom: 100,
+       // height: "100%",
     
     },
 

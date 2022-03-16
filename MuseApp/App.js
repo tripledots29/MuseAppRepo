@@ -107,14 +107,14 @@ function DrawerNavigation() {
     >
       <Drawer.Screen name="My Muse" component={HomeScreen} />
       <Drawer.Screen name="The Blog" component={BlogScreen} />
-      <Drawer.Screen name="Blog Page" component={BlogPageScreen} options={{drawerItemStyle: {height: 0}}} />
+      <Drawer.Screen name="Blog Page" component={BlogPageScreen} options={ { drawerItemStyle: {display: "none"} }} />
       <Drawer.Screen name="Videos" component={VideosScreen} />
       <Drawer.Screen name="Events" component={EventsScreen} />
       <Drawer.Screen name="Reviews" component={ReviewsScreen} />
       <Drawer.Screen name="Chat" component={ChatScreen} />
       
       
-      {/*If needed, Setting height to 0 means the item doesn't show in the drawer, but is accessible by other pages: options={{drawerItemStyle: {height: 0} }*/}
+      {/*If needed, Setting height to 0 means the item doesn't show in the drawer, but is accessible by other pages: options={ { drawerItemStyle: {display: "none"} }*/}
     </Drawer.Navigator>
   );
 }
