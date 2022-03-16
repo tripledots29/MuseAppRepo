@@ -4,7 +4,7 @@ const Social = StyleSheet.create({
     body: {
         //marginTop: 00,
         borderWidth:0,
-        borderRadius:20,
+        borderRadius:0,
         borderBottomWidth: 0,
 
     },
@@ -13,16 +13,14 @@ const Social = StyleSheet.create({
         marginTop: 5,
         paddingBottom: 2
     },
+    header: {
+        backgroundColor: 'rgba(255,255,255,0.4)'
+    },
 
     topImage: {
         width: "100%",
-        height: 160
+        height: 200
     },
-    scrollViewMain: {
-       // height: "100%",
-    
-    },
-
 
     scrollView: {
         height: "100%",

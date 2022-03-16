@@ -24,7 +24,7 @@ const Media = StyleSheet.create({
         height: 150,
         borderBottomWidth: 2,
         borderColor: "#FAE9E8",
-        margintop: 10,
+        marginTop: 10,
         marginBottom: 10, 
 
         
@@ -123,7 +123,7 @@ const Media = StyleSheet.create({
 
     //the actual text of the blog post
     blogPageText: {
-        fontWeight: 400,
+        fontWeight: "400",
     },
 
     blogPageSimilarPosts: {

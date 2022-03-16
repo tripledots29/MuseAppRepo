@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
     paddingLeft: 3,
     paddingRight: 3,
     paddingTop: 10,
-    backgroundColor: 0,
   },
 
   body: {
