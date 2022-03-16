@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     
 
     header: {
-      height:80,
+      //height:80,
       flex:1,
       flexDirection: 'row',
       paddingLeft: 3,
