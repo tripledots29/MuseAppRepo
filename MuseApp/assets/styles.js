@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
   },
 
+<<<<<<< HEAD
   header: {
     height: 80,
     flex: 1,
@@ -24,6 +25,25 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 10,
   },
+=======
+    header: {
+      //height:80,
+      flex:1,
+      flexDirection: 'row',
+      paddingLeft: 3,
+      paddingRight:3,
+    },
+
+    body: {
+      flex: 7,
+      paddingTop: 5,
+      paddingLeft: 10,
+      paddingRight:10,
+    },
+    normalText: {
+      fontFamily:  "PlayfairDisplay_500Medium",
+    },
+>>>>>>> 1c1999635d839280c2d7556d7c2ea92c9b1adb65
 
   transparent: {
     //color: 0,
