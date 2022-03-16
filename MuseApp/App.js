@@ -4,6 +4,22 @@ import { StatusBar } from 'expo-status-bar';
 import { Dimensions } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import AppLoading from 'expo-app-loading';
+//import fonts
+import { useFonts,
+  PlayfairDisplay_400Regular,
+  PlayfairDisplay_500Medium,
+  PlayfairDisplay_600SemiBold,
+  PlayfairDisplay_700Bold,
+  PlayfairDisplay_800ExtraBold,
+  PlayfairDisplay_900Black,
+  PlayfairDisplay_400Regular_Italic,
+  PlayfairDisplay_500Medium_Italic,
+  PlayfairDisplay_600SemiBold_Italic,
+  PlayfairDisplay_700Bold_Italic,
+  PlayfairDisplay_800ExtraBold_Italic,
+  PlayfairDisplay_900Black_Italic 
+} from '@expo-google-fonts/playfair-display';
 
 //Screens
 import Home from './screens/Home';
@@ -61,6 +77,25 @@ function ChatScreen() {
 const Drawer = createDrawerNavigator();
 
 function DrawerNavigation() {
+  let [fontsLoaded] = useFonts({
+      PlayfairDisplay_400Regular,
+    PlayfairDisplay_500Medium,
+    PlayfairDisplay_600SemiBold,
+    PlayfairDisplay_700Bold,
+    PlayfairDisplay_800ExtraBold,
+    PlayfairDisplay_900Black,
+    PlayfairDisplay_400Regular_Italic,
+    PlayfairDisplay_500Medium_Italic,
+    PlayfairDisplay_600SemiBold_Italic,
+    PlayfairDisplay_700Bold_Italic,
+    PlayfairDisplay_800ExtraBold_Italic,
+    PlayfairDisplay_900Black_Italic 
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
   return (
     <Drawer.Navigator screenOptions={{
       headerShown: false,
@@ -68,7 +103,7 @@ function DrawerNavigation() {
         width: Dimensions.get('window').width,
       }
     }}
-    
+    initialRouteName={"Events"}
     >
       <Drawer.Screen name="My Muse" component={HomeScreen} />
       <Drawer.Screen name="The Blog" component={BlogScreen} />
