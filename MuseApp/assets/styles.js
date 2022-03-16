@@ -12,14 +12,14 @@ const styles = StyleSheet.create({
 
     header: {
       height:80,
-      //flex:1
+      flex:1,
       flexDirection: 'row',
       paddingLeft: 3,
       paddingRight:3,
     },
 
     body: {
-      //flex: 7,
+      flex: 7,
       paddingTop: 5,
       paddingLeft: 10,
       paddingRight:10,
