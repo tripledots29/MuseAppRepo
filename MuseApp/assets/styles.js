@@ -8,31 +8,35 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#ffffff',
     },
+    
 
     header: {
-      flex:1,
+      height:80,
+      //flex:1
       flexDirection: 'row',
       paddingLeft: 3,
       paddingRight:3,
     },
 
     body: {
-      flex: 7,
-      paddingTop: 10,
+      //flex: 7,
+      paddingTop: 5,
       paddingLeft: 10,
       paddingRight:10,
-      //backgroundColor: 'gold',
+    },
+    normalText: {
+      fontFamily:  "PlayfairDisplay_500Medium",
     },
 
     genericTitle: {
+      fontFamily:  "PlayfairDisplay_400Regular",
       fontSize: 30,
-      fontWeight: "300",
       paddingBottom: 15
     },
 
     blueCaps: {
-      fontSize: 18,
-      fontWeight:"400",
+      fontFamily:  "PlayfairDisplay_500Medium",
+      fontSize: 16,
       textTransform: 'uppercase',
       color: "#0D3691",
     },
