@@ -16,8 +16,6 @@ import { styles } from "../assets/styles.js";
 import { Media } from "../assets/stylesMedia";
 
 
-
-
 export default function Blog() {
   const navigation = useNavigation();
 

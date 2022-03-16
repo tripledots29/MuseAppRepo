@@ -6,9 +6,8 @@ import {styles} from '../assets/styles.js';
 export default function AppHeader() {
   const navigation = useNavigation();
     return (
-        <View style={styles.main}>
+        <View style={styles.header}>
           <StatusBar/>
-          <View style={styles.header}>
               <View style={styles.headerSections}>
                 <TouchableOpacity onPress={() => navigation.openDrawer()} >
                   <Image
@@ -37,7 +36,6 @@ export default function AppHeader() {
               </View>
 
             </View>
-    </View>
     );
     
 }

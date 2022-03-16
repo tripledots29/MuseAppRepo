@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-
+//import {EStyleSheet} from 'react-native-extended-stylesheet';
 const Media = StyleSheet.create({
 
     //////////////////////////////////////////////////////////////////////////////////////
@@ -26,7 +26,14 @@ const Media = StyleSheet.create({
         borderColor: "#FAE9E8",
         margintop: 10,
         marginBottom: 10, 
+
+        
     },
+
+    //'blogPreview:nth-child-even': {
+    //    backgroundColor: 'gray' // make stripped
+    //  },
+
 
     //pic to the side of the blogs info
     //placeholder
@@ -122,7 +129,7 @@ const Media = StyleSheet.create({
     blogPageSimilarPosts: {
 
     },
-    
+
     
 });
 

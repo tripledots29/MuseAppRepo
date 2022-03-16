@@ -7,38 +7,30 @@ import {Media} from '../assets/stylesMedia';
 import { ScrollView } from 'react-native-gesture-handler';
 
 
+
 export default function BlogPage() {
     const navigation = useNavigation();
     
     return (
     <View style={styles.main}>
 
-    
-    {/* TEST FOR BACKGROUND IMAGE ON BLOG THUMBNAIL
-        <View style={styles.header}>
-            <ImageBackground 
-            style={styles.BlogImage}
-            resizeMode="cover"
-            source={require('../assets/blogThumbnails/OILS.png')}
-            >
-                <AppHeader />
-            </ImageBackground>
-        </View>
-    */}
-
-        <View style={styles.header}>
-            <AppHeader />
-        </View>
+        <View style={Media.blogPageTopView}>
+        
+                <ImageBackground
+                
+                    style={Media.blogPageThumbnailPic}
+                    source={require('../assets/blogThumbnails/OILS.png')}> 
+                        <View style={[styles.header, styles.transparent]}>
+                            <AppHeader />
+                        </View>
+                </ImageBackground>
+            </View>
+        
 
 
         <View style={styles.body}>
 
-            <View style={Media.blogPageTopView}>
-                <Image
-                    style={Media.blogPageThumbnailPic}
-                    source={require('../assets/blogThumbnails/OILS.png')}
-                />
-            </View>
+            
 
             <ScrollView style={Media.blogPageContentView}>
                 <View style={Media.blogPageSummary}>
