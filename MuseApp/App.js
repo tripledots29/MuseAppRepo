@@ -103,7 +103,7 @@ function DrawerNavigation() {
         width: Dimensions.get('window').width,
       }
     }}
-    initialRouteName={"Events"}
+    //initialRouteName={"Events"}
     >
       <Drawer.Screen name="My Muse" component={HomeScreen} />
       <Drawer.Screen name="The Blog" component={BlogScreen} />
