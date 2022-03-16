@@ -17,7 +17,7 @@ export default function Events() {
         </View>
         
         <View style={[styles.body, Social.body]}>
-        <ScrollView>
+        <ScrollView style={Social.scrollViewMain}>
             <Image
                 style={Social.topImage}
                 source={require('../assets/eventThumbnails/pexels-radomir-jordanovic-1644888.jpg')}
