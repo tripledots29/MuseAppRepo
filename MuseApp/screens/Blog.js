@@ -79,10 +79,10 @@ export default function Blog() {
 
                 <View style={Media.blogPreview}>
                     <View style={Media.blogPreviewThumbnail}>
-                    <Image
-                        style={Media.blogPreviewThumbnailPic}
-                        source={require('../assets/blogThumbnails/dating.png')}
-                    />
+                        <Image
+                            style={Media.blogPreviewThumbnailPic}
+                            source={require('../assets/blogThumbnails/dating.png')}
+                        />
                     </View> 
                     <View style={Media.blogPreviewText}>
                         <Text style={[styles.blueCaps, Media.blogPreviewCategory]}>inner peace</Text>

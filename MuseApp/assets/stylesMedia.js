@@ -130,7 +130,76 @@ const Media = StyleSheet.create({
 
     },
 
-    
+
+    //////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////Video Main///////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////
+
+    videoTopView: {
+        flex: 0.2,
+    },
+
+    videoContentView: {
+        flex: 5
+    },
+
+    videoPreview: {
+        flex: 1,
+    },
+
+    videoPreviewThumbnail: {
+        height: 400,
+        width: 350,
+        margin: "auto",
+    },
+
+    videoPreviewCategory: {
+        padding: 10,
+    },
+
+    //video title + length
+    //placeholder
+    videoPreviewSubSection: {
+        flex: 1,
+        flexDirection: "row",
+        padding: 10,
+    },
+
+    //placeholder
+    videoPreviewSSTitle: {
+        flex: 4,
+    },
+
+    videoPreviewTitle: {
+        fontSize: 20,
+        paddingRight: 1,
+    },
+
+    //placeholder
+    videoPreviewSSLength: {
+        flex: 1,
+        marginTop: 20,
+        
+    },
+
+    videoPreviewLength: {
+        color: "#707070",
+        fontSize: 15,
+    },
+
+    //placeholder
+    videoSortView: {
+        
+    },
+
+    videoSortText: {
+        fontSize: 16,
+        lineHeight: 21,
+        fontWeight: 'bold',
+        letterSpacing: 0.25,
+        color: 'white',
+    },
+
 });
 
 export {Media};
