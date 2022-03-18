@@ -27,6 +27,7 @@ import Events from './screens/Events';
 import Blog from './screens/Blog';
 import BlogPage from './screens/BlogPage';
 import Videos from './screens/Videos';
+import VideosPage from './screens/VideosPage';
 import Reviews from './screens/Reviews';
 import Chat from './screens/Chat';
 
@@ -58,6 +59,12 @@ function BlogPageScreen() {
 function VideosScreen() {
   return (
     <Videos />
+  );
+}
+
+function VideosPageScreen() {
+  return (
+    <BlogPage />
   );
 }
 
@@ -109,6 +116,7 @@ function DrawerNavigation() {
       <Drawer.Screen name="The Blog" component={BlogScreen} />
       <Drawer.Screen name="Blog Page" component={BlogPageScreen} options={ { drawerItemStyle: {display: "none"} }} />
       <Drawer.Screen name="Videos" component={VideosScreen} />
+      <Drawer.Screen name="Videos Page" component={VideosPageScreen} options={ { drawerItemStyle: {display: "none"} }} />
       <Drawer.Screen name="Events" component={EventsScreen} />
       <Drawer.Screen name="Reviews" component={ReviewsScreen} />
       <Drawer.Screen name="Chat" component={ChatScreen} />

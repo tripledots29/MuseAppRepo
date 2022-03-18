@@ -6,7 +6,7 @@ import {styles} from '../assets/styles.js';
 import { Media } from '../assets/stylesMedia';
 import { ScrollView } from 'react-native-gesture-handler';
 
-export default function Videos() {
+export default function VideosPage() {
     const navigation = useNavigation();
     
     return (
@@ -26,29 +26,23 @@ export default function Videos() {
                 />
             </View>
 
-            <ScrollView style={Media.videoContentView}>
-
-
-                <Pressable onPress={() => navigation.navigate("Videos Page")}> 
-                    <View style={Media.videoPreview}>
-                        <Image
-                            style={Media.videoPreviewThumbnail}
-                            source={require('../assets/videoThumbnails/meditation.png')}
-                        />
-                        <Text style={[styles.blueCaps, Media.videoPreviewCategory]}>Wellness</Text>
-                        <View style={Media.videoPreviewSubSection}>
-                            <View style={Media.videoPreviewSSTitle}>
-                                <Text style={Media.videoPreviewTitle}>Guided Meditation with Meghan Lane</Text>
-                            </View>
-                            <View style={Media.videoPreviewSSLength}>
-                                <Text style={Media.videoPreviewLength}>32:05</Text>
-                            </View>
+            <View style={Media.videoContentView}>
+                <View style={Media.videoPreview}>
+                    <Image
+                        style={Media.videoPreviewThumbnail}
+                        source={require('../assets/icon.png')}
+                    />
+                    <Text style={[styles.blueCaps, Media.videoPreviewCategory]}>Wellness</Text>
+                    <View style={Media.videoPreviewSubSection}>
+                        <View style={Media.videoPreviewSSTitle}>
+                            <Text style={Media.videoPreviewTitle}>Guided Meditation with Meghan Lane</Text>
+                        </View>
+                        <View style={Media.videoPreviewSSLength}>
+                            <Text style={Media.videoPreviewLength}>31:05</Text>
                         </View>
                     </View>
-                </Pressable>
-
-
-            </ScrollView>
+                </View>
+            </View>
 
             <View style={Media.videoSortView}>
             <Pressable style={styles.genericButton} onPress={() => navigation.navigate("Blog Page")}>
